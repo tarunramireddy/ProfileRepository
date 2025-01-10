@@ -21,29 +21,29 @@ window.onscroll = function() {
     document.getElementById('progressBar').style.width = scrollPercentage + '%';
 };
 
-// Scroll reveal effect for sections
-window.addEventListener('scroll', revealElements);
+// // Scroll reveal effect for sections
+// window.addEventListener('scroll', revealElements);
 
-function revealElements() {
-    const elements = document.querySelectorAll('.reveal');
-    elements.forEach(element => {
-        if (isElementInViewport(element)) {
-            element.classList.add('show');
-        } else {
-            element.classList.remove('show');
-        }
-    });
-}
+// function revealElements() {
+//     const elements = document.querySelectorAll('.reveal');
+//     elements.forEach(element => {
+//         if (isElementInViewport(element)) {
+//             element.classList.add('show');
+//         } else {
+//             element.classList.remove('show');
+//         }
+//     });
+// }
 
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return rect.top >= 0 && rect.bottom <= window.innerHeight;
-}
+// function isElementInViewport(el) {
+//     const rect = el.getBoundingClientRect();
+//     return rect.top >= 0 && rect.bottom <= window.innerHeight;
+// }
 
-// Add reveal class to sections
-document.querySelectorAll('section').forEach(section => {
-    section.classList.add('reveal');
-});
+// // Add reveal class to sections
+// document.querySelectorAll('section').forEach(section => {
+//     section.classList.add('reveal');
+// });
 
 // Highlight active link on scroll
 document.addEventListener('scroll', function () {
